@@ -616,3 +616,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+/************ technologies Css ************/
+.language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  animation: moveUp 1s infinite alternate; /* Animation effect */
+}
+
+.language-image {
+  width: 100px;
+  height: 100px;
+}
+
+.language-name {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
