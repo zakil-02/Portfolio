@@ -14,7 +14,13 @@
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
-
+/************ backfround .app ************/
+.App {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(45deg, #000000, #0f1211 20px, #161b19 20px, #152923 40px);
+ /*********************/
+}
 /************ Default Css ************/
 * {
   margin: 0;
@@ -465,6 +471,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.nav-pills .nav-link {
+  cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background-color: #007bff;
+  color: #da1111;
+}
 
 /************ Projects Css ************/
 .contact {
@@ -623,6 +638,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .language-item {
@@ -650,4 +666,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   to {
     transform: translateY(-10px);
   }
+}
+.title-container {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.title h2 {
+	font-size: 45px;
+	font-weight: 700;
 }
