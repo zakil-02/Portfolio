@@ -9,25 +9,41 @@ import Carousel from "react-bootstrap/Carousel";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+//Maze Project
+import maze1 from "../assets/img/0.png";
+import maze2 from "../assets/img/1.png";
+import maze3 from "../assets/img/2.png";
+import mazel from "../assets/img/mazelogo.png";
+
+//RISs project
+import poster from "../assets/img/paf.png";
+//Interpactif
+
+//Radiomique
+import rad1 from "../assets/img/radiomique1.png";
+import rad2 from "../assets/img/radiomique2.png";
+//Levitate
+
+
 export const Projects = () => {
   const projects = [
     {
       title: "Maze Game",
       description: "Design & Development",
-      imgUrls: [maze, projImg2],
+      imgUrls: [mazel, maze1, maze2, maze3],
     },
     {
-      title: "Maze Game",
+      title: "RISs Beam Alignement with ML",
       description: "Design & Development",
-      imgUrls: [maze, projImg2],
+      imgUrls: [poster],
     },
     {
-      title: "Maze Game",
-      description: "Design & Development",
-      imgUrls: [maze, projImg2],
+      title: "Radiomique",
+      description: "Medical imaging & Statistics",
+      imgUrls: [rad1, rad2],
     },
     {
-      title: "Maze Game",
+      title: "Levitate",
       description: "Design & Development",
       imgUrls: [maze, projImg2],
     },
@@ -67,7 +83,7 @@ export const Projects = () => {
                         </Carousel>
                       </Col>
                       <Col md={6}>
-                        <h3>{project.title}</h3>
+                        <h2>{project.title}</h2>
                         <p>{project.description}</p>
                         {/* Additional project details can be added here */}
                       </Col>
