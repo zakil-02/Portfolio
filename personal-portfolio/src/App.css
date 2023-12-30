@@ -699,13 +699,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-/************ technologies Css ************/
+/************ ProgLanguages/ softwareTools Css  (The same css for both)************/
 .language-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  margin-top: 60px;
+}
+.items-container {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .language-item {
@@ -731,17 +736,70 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 .title-container {
-  background: #151515;
+  background: #060404;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 30px 50px;
   margin-top: -60px;
+  width: auto;
+  height: 100px;
 }
 .title h2 {
 	font-size: 45px;
 	font-weight: 700;
+}
+
+/************ Education Css ************/
+.telecom {
+  padding: 0 0 90px 0;
+  background-color: #000;
+  background-image: url('./assets/img/raison.png');
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+}
+
+.telecom h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.telecom p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  width: 56%;
+  text-align: center;
+}
+
+.SubjectList {
+  list-style: none;
+  background: #12101191;
+  border-radius: 64px;
+  text-align: start;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.SubjectList p {
+  color: #ffffff;
+  font-size: 23px;
+  margin: 10px auto 20px auto;
+  text-align: start;
+}
+
+.SubjectList p:hover {
+  background-color: transparent;
+}
+
+.SubjectList p:last-child {
+  border-bottom: none;
 }

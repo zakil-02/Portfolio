@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import ProgrammingLanguages from './components/prgL';
 import Softwares from './components/Software';
+import { EducationComponent } from './components/Education';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <ProgrammingLanguages/>
       <Softwares/>
+      <EducationComponent />
       <Projects />
       <Contact />
       <Footer />

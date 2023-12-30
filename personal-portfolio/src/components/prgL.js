@@ -17,7 +17,9 @@ import soliImage from '../assets/img/solidity.png';
 import rImage from '../assets/img/R.svg.png';
 import pyImage from '../assets/img/py.png';
 import matlabImage from '../assets/img/Matlab.png'
-
+import sql from '../assets/img/MySQL.png'
+import sv from '../assets/img/SystemVerilog_logo.png'
+import arduino from '../assets/img/Arduino.png'
 
 const languages = [
   { name: 'Python', image: pyImage },
@@ -25,10 +27,13 @@ const languages = [
   { name: 'matlab', image: matlabImage },
   { name: 'Java', image: jImage },
   { name: 'C', image: cImage },
+  { name: 'Arduino', image: arduino },
+  { name: 'SystemVerilog', image: sv },
   { name: 'C++', image: cplusImage },
   { name: 'html', image: htmlImage },
   { name: 'css', image: cssImage },
   { name: 'JavaScript', image: jsImage },
+  { name: 'MySQL', image: sql },
   { name: 'React', image: reactImage },
   { name: 'Solidity', image: soliImage },
   
@@ -41,17 +46,18 @@ const ProgrammingLanguages = () => {
       <div className="title-container"> {/* Added container for title */}
         <h2 className="title">Programming Languages</h2>
       </div>
-      
-      {languages.map((language, index) => (
-        <div className="language-item" key={index}>
-          <img
-            className="language-image"
-            src={language.image}
-            alt={language.name}
-          />
-          <p className="language-name">{language.name}</p>
-        </div>
-      ))}
+      <div className="items-container">
+        {languages.map((language, index) => (
+          <div className="language-item" key={index}>
+            <img
+              className="language-image"
+              src={language.image}
+              alt={language.name}
+            />
+            <p className="language-name">{language.name}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

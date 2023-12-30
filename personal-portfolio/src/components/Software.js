@@ -11,8 +11,9 @@ import simulink from '../assets/img/sim.png';
 import scilab from '../assets/img/sci.png';
 import gimp from '../assets/img/gimp.png';
 import excel from '../assets/img/x.png';
-
+import git from '../assets/img/git.png';
 const skills = [
+  { name: 'Git', image: git },
   { name: 'Adobe Premier', image: ap },
   { name: 'Adobe Illustrator', image: ai },
   { name: 'Unix', image: unix },
@@ -31,16 +32,18 @@ const Softwares = () => {
       <div className="title-container"> {/* Added container for title */}
         <h2 className="title">Software tools</h2>
       </div>
-      {skills.map((skill, index) => (
-        <div className="language-item" key={index}>
-          <img
-            className="language-image"
-            src={skill.image}
-            alt={skill.name}
-          />
-          <p className="language-name">{skill.name}</p>
-        </div>
-      ))}
+      <div className='items-container'>
+        {skills.map((skill, index) => (
+          <div className="language-item" key={index}>
+            <img
+              className="language-image"
+              src={skill.image}
+              alt={skill.name}
+            />
+            <p className="language-name">{skill.name}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
