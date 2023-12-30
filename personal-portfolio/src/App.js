@@ -9,7 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import ProgrammingLanguages from './components/prgL';
 import Softwares from './components/Software';
-import { EducationComponent } from './components/Education';
+import { EducationComponent } from './components/TelecomEducation.js';
 
 function App() {
   return (
