@@ -87,6 +87,87 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/************ Loader Css ************/
+
+.loading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  height: 100vh; /* Make the container cover the full height of the viewport */
+}
+.pyramid-loader {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.pyramid-loader .wrapper .side {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to bottom right, #FFA500, #FF4500);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: linear-gradient(to bottom right, #FF4500, #FFA500);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: linear-gradient(to bottom right, #FFA500, #FF4500);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: linear-gradient(to bottom right, #FFA500, #FF4500);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: linear-gradient(to bottom right, #FF4500, #FFA500);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 280px;
+  height: 280px;
+  background: #FF8C00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-150px);
+  filter: blur(12px);
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -417,7 +498,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(7, 5, 5) 0,
+    transparent 30px,
+    rgb(0, 0, 0) 30px,
+    transparent 60px,
+    rgb(0, 0, 0) 120px,
+    transparent 240px
+  );
+  background-color: rgb(0, 0, 0);
 }
 .project h2 {
 	font-size: 45px;
@@ -550,7 +642,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #ab1212 -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #000000 -5.91%, #000000 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -594,7 +686,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -603,11 +695,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .contact form button:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #8c0000;
   width: 0;
   height: 100%;
   position: absolute;
@@ -615,6 +707,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 19px;
 }
 .contact form button:hover::before {
   width: 100%;
@@ -623,15 +716,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-image: url('./assets/img/color-sharp.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #0b090991;
   border-radius: 55px;
-  color: #121212;
+  color: #ffffff;
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
