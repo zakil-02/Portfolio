@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from "react-bootstrap";
-import telecomparis from "../assets/img/telecomW.png"
+import { Container, Row} from "react-bootstrap";
 export const EducationComponent = () => {
   const subjects = [
     "Signal Processing for AI and Medical Imaging",
