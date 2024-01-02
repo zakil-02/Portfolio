@@ -318,11 +318,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
-.banner {
-  /*
+.banner {/*
   width: 100%;
   height: 100%;
-  /* Add your background pattern here 
+   /*Add your background pattern here 
   --sz: 15px;
   --c0: #000;
   --c1: #2d2b2b;
@@ -397,7 +396,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgb(130, 1, 1) -5.91%, rgb(0, 0, 0) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -526,11 +525,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #eeeeee17;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 1250px;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -554,7 +560,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #350278 -5.91%, #b30000 111.58%);
+    /*background: linear-gradient(90.21deg, #350278 -5.91%, #b30000 111.58%);*/
+    background-color: #000;
     top: 0;
     left: 0;
     z-index: -1;
