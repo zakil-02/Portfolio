@@ -23,18 +23,18 @@ import poster from "../assets/img/paf.png";
 import rad1 from "../assets/img/radiomique1.png";
 import rad2 from "../assets/img/radiomique2.png";
 //Levitate
-
-
+import levi1 from "../assets/img/levitate1.png";
+import levi2 from "../assets/img/levitate2.png";
 export const Projects = () => {
   const projects = [
     {
       title: "Maze Game",
-      description: "Design & Development",
+      description: "Design, Development & Optimization",
       imgUrls: [mazel, maze1, maze2, maze3],
     },
     {
       title: "RISs Beam Alignement with ML",
-      description: "Design & Development",
+      description: "ML, Applied Maths & Information Theory",
       imgUrls: [poster],
     },
     {
@@ -45,7 +45,7 @@ export const Projects = () => {
     {
       title: "Levitate",
       description: "Design & Development",
-      imgUrls: [maze, projImg2],
+      imgUrls: [levi1, levi2],
     },
   ];
 
