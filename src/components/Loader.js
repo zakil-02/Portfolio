@@ -14,7 +14,7 @@ export const Loader = () => {
               <span class="shadow"></span>
           </div>  
         </div>
-        <h1>Loading...</h1>
+        <h3>Loading...</h3>
       </div>
   );
 };
