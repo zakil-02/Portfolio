@@ -31,7 +31,7 @@ export const EducationComponent = () => {
         <Row>
           <h2>Education</h2>
           <p>Here is a description of my studies at Télécom ParisTech</p>
-          <h2 style={{ color: 'red' }}>Master of Engineering at Télécom ParisTech</h2>
+          <h2 style={{ color: 'red' }}>MEng at Télécom ParisTech</h2>
           <ul className='SubjectList'>
             {subjects.map((subject, index) => (
               <li _ngcontent-app-root="">

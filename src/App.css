@@ -97,6 +97,8 @@ p.danger {
   align-items: center;
   flex-direction: column; /* Stack items vertically */
   height: 100vh; /* Make the container cover the full height of the viewport */
+
+  
 }
 .pyramid-loader {
   position: relative;
@@ -122,8 +124,8 @@ p.danger {
 }
 
 .pyramid-loader .wrapper .side {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background: linear-gradient(to bottom right, #FFA500, #FF4500);
   position: absolute;
   top: 0;
@@ -156,8 +158,8 @@ p.danger {
 }
 
 .pyramid-loader .wrapper .shadow {
-  width: 280px;
-  height: 280px;
+  width: 140px;
+  height: 140px;
   background: #FF8C00;
   position: absolute;
   top: 0;

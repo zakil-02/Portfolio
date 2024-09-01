@@ -11,29 +11,27 @@ import jImage from '../assets/img/java.png';
 import jsImage from '../assets/img/js.png';
 import cImage from '../assets/img/c.png';
 import cplusImage from '../assets/img/c++.png';
-import cssImage from '../assets/img/css.png';
-import htmlImage from '../assets/img/html.png';
+import cssImage from '../assets/img/css.svg';
+import htmlImage from '../assets/img/html.svg';
 import soliImage from '../assets/img/solidity.png';
 import rImage from '../assets/img/R.svg.png';
 import pyImage from '../assets/img/py.png';
 import matlabImage from '../assets/img/Matlab.png'
-import sql from '../assets/img/MySQL.png'
+import sql from '../assets/img/postgre.svg'
 import sv from '../assets/img/SystemVerilog_logo.png'
 import arduino from '../assets/img/Arduino.png'
 
 const languages = [
   { name: 'Python', image: pyImage },
-  { name: 'R language', image: rImage },
-  { name: 'matlab', image: matlabImage },
+  { name: 'C++', image: cplusImage },
   { name: 'Java', image: jImage },
+  { name: 'R language', image: rImage },
+  { name: 'SQL', image: sql },
   { name: 'C', image: cImage },
   { name: 'Arduino', image: arduino },
   { name: 'SystemVerilog', image: sv },
-  { name: 'C++', image: cplusImage },
   { name: 'html', image: htmlImage },
   { name: 'css', image: cssImage },
-  { name: 'JavaScript', image: jsImage },
-  { name: 'MySQL', image: sql },
   { name: 'React', image: reactImage },
   { name: 'Solidity', image: soliImage },
   

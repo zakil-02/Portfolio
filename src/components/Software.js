@@ -6,7 +6,6 @@ import 'animate.css';
 import ap from '../assets/img/ap.png';
 import ai from '../assets/img/ai.png';
 import unix from '../assets/img/ubunto.png';
-import windows from '../assets/img/win.png';
 import simulink from '../assets/img/sim.png';
 import scilab from '../assets/img/sci.png';
 import gimp from '../assets/img/gimp.png';
@@ -14,16 +13,13 @@ import excel from '../assets/img/x.png';
 import git from '../assets/img/git.png';
 const skills = [
   { name: 'Git', image: git },
+  { name: 'Excel', image: excel },
   { name: 'Adobe Premier', image: ap },
   { name: 'Adobe Illustrator', image: ai },
   { name: 'Unix', image: unix },
-  { name: 'Windows', image: windows },
   { name: 'Simulink/Matlab', image: simulink },
   { name: 'Scilab', image: scilab },
-  { name: 'Gimp', image: gimp },
-  { name: 'Excel', image: excel}
-  
-  
+  { name: 'Gimp', image: gimp },  
 ];
 
 const Softwares = () => {

@@ -38,11 +38,11 @@ export const Banner = () => {
   
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setDelta(50); // Adjust this value to control the speed of erasing (lower value = faster erasing)
+      setDelta(5); // Adjust this value to control the speed of erasing (lower value = faster erasing)
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500); // Adjust this value to control the speed of writing (lower value = faster writing)
+      setDelta(50); // Adjust this value to control the speed of writing (lower value = faster writing)
     }
   };
 
@@ -55,8 +55,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Zakaria`} <span className="txt-rotate" dataPeriod="50" data-rotate='[ "Engineering student"]'><span className="wrap">{text}</span></span></h1>
-                  <p>Greetings! I'm a dedicated engineering student from Telecom Paris, part of the 2025 cohort. With a fervent passion for technology and innovation, I'm on a mission to leverage my academic foundation and practical skills to create a meaningful impact. This portfolio showcases my journey, from academic endeavors to personal projects. Welcome, and let's explore the world of engineering together!</p>
+                <h1>Hi! I'm Zakaria</h1>
+                  <p>I am a second-year engineering student at Télécom Paris. I am pursuing a double major in Signal Processing for AI and Computer Vision. With a deep passion for statistics, machine learning, and computer science, I am dedicated to leveraging these disciplines to drive innovation and solve complex problems.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
