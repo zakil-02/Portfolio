@@ -10,10 +10,9 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  // const [index, setIndex] = useState(1); // Unused variable
   const toRotate = [ "Engineering student !"]; // "Web Designer", "UI/UX Designer" 
-  const period = 50;
-  
+  // const period = 50; // Unused variable
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -21,7 +20,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text, delta]); // Added 'delta' to the dependency array
 
   const tick = () => {
     let i = loopNum % toRotate.length;

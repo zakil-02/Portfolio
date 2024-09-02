@@ -8,7 +8,7 @@ import 'animate.css';
 //import './ProgrammingLanguages.css'; // Make sure this points to your CSS file
 import reactImage from '../assets/img/react.png';
 import jImage from '../assets/img/java.png';
-import jsImage from '../assets/img/js.png';
+// import jsImage from '../assets/img/js.png';
 import cImage from '../assets/img/c.png';
 import cplusImage from '../assets/img/c++.png';
 import cssImage from '../assets/img/css.svg';
@@ -16,7 +16,7 @@ import htmlImage from '../assets/img/html.svg';
 import soliImage from '../assets/img/solidity.png';
 import rImage from '../assets/img/R.svg.png';
 import pyImage from '../assets/img/py.png';
-import matlabImage from '../assets/img/Matlab.png'
+// import matlabImage from '../assets/img/Matlab.png'
 import sql from '../assets/img/postgre.svg'
 import sv from '../assets/img/SystemVerilog_logo.png'
 import arduino from '../assets/img/Arduino.png'
@@ -26,7 +26,7 @@ const languages = [
   { name: 'C++', image: cplusImage },
   { name: 'Java', image: jImage },
   { name: 'R language', image: rImage },
-  { name: 'SQL', image: sql },
+  { name: 'PostgreSQL', image: sql },
   { name: 'C', image: cImage },
   { name: 'Arduino', image: arduino },
   { name: 'SystemVerilog', image: sv },

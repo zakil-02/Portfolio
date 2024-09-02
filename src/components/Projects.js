@@ -73,7 +73,7 @@ export const Projects = () => {
                         <Carousel>
                           {project.imgUrls.map((imgUrl, imgIndex) => (
                             <Carousel.Item key={imgIndex}>
-                              <img src={imgUrl} alt={`Project ${index + 1} image ${imgIndex + 1}`} className="img-fluid" />
+                              <img src={imgUrl} alt={`Project ${index + 1} "image" ${imgIndex + 1}`} className="img-fluid" />
                             </Carousel.Item>
                           ))}
                         </Carousel>
