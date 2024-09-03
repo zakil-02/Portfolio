@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.0998519a.css",
-    "main.js": "/Portfolio/static/js/main.c95f603c.js",
+    "main.js": "/Portfolio/static/js/main.479cc3d0.js",
     "static/js/488.ade2f43d.chunk.js": "/Portfolio/static/js/488.ade2f43d.chunk.js",
     "static/media/pdp.png": "/Portfolio/static/media/pdp.8c35f5a4df650704af14.png",
     "static/media/levitate2.png": "/Portfolio/static/media/levitate2.fa19074afbdd353b211d.png",
@@ -13,6 +13,7 @@
     "static/media/react.png": "/Portfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/levitate1.png": "/Portfolio/static/media/levitate1.3d9f2c85f44786ec440b.png",
     "static/media/ubunto.png": "/Portfolio/static/media/ubunto.fca5830985d91d4f0769.png",
+    "static/media/epoly.png": "/Portfolio/static/media/epoly.bfaa7e44d5f706667763.png",
     "static/media/sim.png": "/Portfolio/static/media/sim.99b129d7e5ea2f280a5b.png",
     "static/media/raison.png": "/Portfolio/static/media/raison.5770576e47322a0fead4.png",
     "static/media/gimp.png": "/Portfolio/static/media/gimp.6164d24fb7c14db6c6af.png",
@@ -48,11 +49,11 @@
     "static/media/css.svg": "/Portfolio/static/media/css.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "main.0998519a.css.map": "/Portfolio/static/css/main.0998519a.css.map",
-    "main.c95f603c.js.map": "/Portfolio/static/js/main.c95f603c.js.map",
+    "main.479cc3d0.js.map": "/Portfolio/static/js/main.479cc3d0.js.map",
     "488.ade2f43d.chunk.js.map": "/Portfolio/static/js/488.ade2f43d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0998519a.css",
-    "static/js/main.c95f603c.js"
+    "static/js/main.479cc3d0.js"
   ]
 }
