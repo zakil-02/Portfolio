@@ -1,5 +1,9 @@
 import React from 'react';
-import { Container, Row} from "react-bootstrap";
+import { Container, Row, Col, Card, Accordion } from 'react-bootstrap';
+import { FiBook, FiAward, FiChevronDown } from 'react-icons/fi';
+import '../App.css';
+
+
 export const EducationComponent = () => {
   const subjects1A = [
     "Signal Processing for AI and Medical Imaging",
@@ -61,50 +65,84 @@ export const EducationComponent = () => {
 
 
   return (
-    <section className="telecom" id="telecom">
+    <section className="education" id="education">
       <Container>
-        <Row>
-          <h2>Education</h2>
-          <h2 style={{ color: 'red' }}>MEng at Télécom ParisTech</h2>
-          <ul className='SubjectList'>
-            <h3> I - First Year: Generalist year </h3>
-            {subjects1A.map((subject, index) => (
-              <li _ngcontent-app-root="">
-              <div class="course">
-                <p key={index} class="title">- {subject};</p>
-              </div>
-              </li>
-            ))}
-            <h3> II- Second Year: Double major </h3>
-            <h4>Computer Vision & Medical Imaging Major </h4>
-            {Ima_subjects.map((subject, index) => (
-              <li _ngcontent-app-root="">
-              <div class="course">
-                <p key={index} class="title">- {subject};</p>
-              </div>
-              </li>
-            ))}
-            <h4>Signal Processing for AI Major </h4>
-            {tsia_subjects.map((subject, index) => (
-              <li _ngcontent-app-root="">
-              <div class="course">
-                <p key={index} class="title">- {subject};</p>
-              </div>
-              </li>
-            ))}
-          </ul>
-          <h2 style={{ color: 'red' }}>M2 Data Science at Ecole Polytechnique</h2>
-          <ul className='SubjectList'>
-            {M2Ds_courses.map((subject, index) => (
-              <li _ngcontent-app-root="">
-              <div class="course">
-                <p key={index} class="title">- {subject};</p>
-              </div>
-              </li>
-            ))}
-          </ul>
+        <h2 className="section-title">Education</h2>
+        
+        <Row className="g-4">
+          {/* Telecom Paris */}
+          <Col xs={12} lg={6}>
+            <Card className="education-card">
+              <Card.Body>
+                <div className="edu-header">
+                  <FiBook className="edu-icon" />
+                  <div>
+                    <h3 className="edu-institution">Télécom ParisTech</h3>
+                    <p className="edu-degree">Master of Engineering</p>
+                  </div>
+                </div>
+
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      First Year: Generalist Curriculum
+                      <FiChevronDown className="accordion-arrow" />
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <SubjectList items={subjects1A} columns={2} />
+                    </Accordion.Body>
+                  </Accordion.Item>
+
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>
+                      Second Year: Double Major
+                      <FiChevronDown className="accordion-arrow" />
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <h4 className="major-title">Computer Vision & Medical Imaging</h4>
+                      <SubjectList items={Ima_subjects} />
+                      
+                      <h4 className="major-title mt-4">Signal Processing for AI</h4>
+                      <SubjectList items={tsia_subjects} />
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          {/* École Polytechnique */}
+          <Col xs={12} lg={6}>
+            <Card className="education-card">
+              <Card.Body>
+                <div className="edu-header">
+                  <FiAward className="edu-icon" />
+                  <div>
+                    <h3 className="edu-institution">École Polytechnique</h3>
+                    <p className="edu-degree">MSc Data Science</p>
+                  </div>
+                </div>
+
+                <SubjectList items={M2Ds_courses} columns={1} />
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </section>
   );
 };
+
+// Helper component
+const SubjectList = ({ items, columns = 1 }) => (
+  <Row className={`subject-list columns-${columns}`}>
+    {items.map((subject, index) => (
+      <Col key={index} xs={12} md={columns > 1 ? 6 : 12}>
+        <div className="subject-item">
+          <span className="bullet">•</span>
+          {subject}
+        </div>
+      </Col>
+    ))}
+  </Row>
+);

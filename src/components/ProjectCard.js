@@ -1,15 +1,22 @@
-import { Col } from "react-bootstrap";
+import { memo } from "react";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+const ProjectCard = ({ title, description, imgUrls, onClick }) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-        </div>
+    <div className="project-card" onClick={onClick}>
+      <div className="card-image">
+        <img 
+          src={imgUrls[0]} 
+          alt={title}
+          loading="lazy"
+          className="img-fluid"
+        />
       </div>
-    </Col>
-  )
-}
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p className="truncate-text">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default memo(ProjectCard);
